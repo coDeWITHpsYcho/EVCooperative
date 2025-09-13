@@ -1,0 +1,371 @@
+.transportHome {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  overflow-x: hidden;
+  color: #000;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90vh;
+  padding: 2rem 5%;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.heroContent {
+  flex: 1;
+  max-width: 600px;
+  color: white;
+}
+
+.heroTitle {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(45deg, #ffffff, #f0f8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroSubtitle {
+  display: block;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.heroDescription {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  opacity: 0.95;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 1.2rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btnPrimary {
+  background: white;
+  color: #667eea;
+}
+
+.btnPrimary:hover {
+  background: #f8fafc;
+  transform: translateY(-3px);
+}
+
+.btnSecondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btnSecondary:hover {
+  background: white;
+  color: #667eea;
+  transform: translateY(-3px);
+}
+
+/* Hero Stats */
+.heroStats {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.statItem h3 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  background: linear-gradient(45deg, #ffffff, #f0f8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.statItem p {
+  color: white;
+  font-weight: 600;
+}
+
+/* Features Section */
+.container {
+  padding: 4rem 5%;
+}
+
+.features {
+  margin-top: 2rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.featureCard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.featureIcon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.featureTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.featureDescription {
+  font-size: 0.95rem;
+  color: white;
+  opacity: 0.9;
+}
+
+/* Vehicle Types */
+.vehicleTypes {
+  margin-top: 4rem;
+}
+
+.vehicleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.vehicleCard {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.vehicleImage span {
+  font-size: 3rem;
+}
+
+.vehicleInfo {
+  flex: 1;
+}
+
+.vehicleType {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.vehicleDescription {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.vehicleDetails {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.vehiclePrice {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.vehicleTime {
+  font-style: italic;
+}
+
+/* Driver Section */
+.driverSection {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.driverContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.driverText {
+  flex: 1;
+}
+
+.driverBenefits {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  color: white;
+}
+
+.driverBenefits li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.driverButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.driverImage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.driverCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  width: 100%;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.driverAvatar {
+  font-size: 2.5rem;
+}
+
+.cardStats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardStat span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.cardStat p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* CTA Section */
+.cta {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  text-align: center;
+  padding: 5rem 2rem;
+  margin-top: 5rem;
+  border-radius: 20px;
+  color: #2d3748;
+}
+
+.ctaContent h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.ctaContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroTitle {
+    font-size: 3rem;
+  }
+
+  .heroButtons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroDescription {
+    font-size: 1.1rem;
+  }
+
+  .featuresGrid,
+  .vehicleGrid,
+  .driverContent {
+    grid-template-columns: 1fr;
+  }
+
+  .cardStat span {
+    font-size: 1.2rem;
+  }
+
+  .ctaContent h2 {
+    font-size: 2rem;
+  }
+}

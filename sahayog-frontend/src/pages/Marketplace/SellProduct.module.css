@@ -1,0 +1,466 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.progressBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progressStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.stepCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.stepCircle.active {
+  background: white;
+  color: #667eea;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+.progressLine {
+  width: 80px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 1rem;
+}
+
+.form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 25px;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.step {
+  min-height: 400px;
+}
+
+.step h2 {
+  color: #2d3748;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 0.9rem;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f8fafc;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  background: white;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.featureInput {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.featureInput input {
+  flex: 1;
+}
+
+.removeButton {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.removeButton:hover {
+  background: #c53030;
+}
+
+.addFeatureButton {
+  background: none;
+  border: 2px dashed #667eea;
+  color: #667eea;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.addFeatureButton:hover {
+  background: #667eea;
+  color: white;
+}
+
+.imageUpload {
+  margin-bottom: 2rem;
+}
+
+.uploadArea {
+  border: 3px dashed #e2e8f0;
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.uploadArea:hover {
+  border-color: #667eea;
+  background: #f8fafc;
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadLabel {
+  cursor: pointer;
+  display: block;
+}
+
+.uploadIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #667eea;
+}
+
+.uploadLabel h3 {
+  color: #2d3748;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.uploadLabel p {
+  color: #718096;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.uploadLabel small {
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+.imageGuidelines {
+  background: #f8fafc;
+  border-radius: 15px;
+  padding: 2rem;
+  border: 2px solid #e2e8f0;
+}
+
+.imageGuidelines h3 {
+  color: #2d3748;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.imageGuidelines ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.imageGuidelines li {
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.imageGuidelines li::before {
+  content: '✓';
+  color: #10B981;
+  font-weight: 700;
+}
+
+.reviewSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.reviewCard {
+  background: #f8fafc;
+  border-radius: 15px;
+  padding: 2rem;
+  border: 2px solid #e2e8f0;
+}
+
+.reviewCard h3 {
+  color: #2d3748;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.reviewItem {
+  margin-bottom: 0.8rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.reviewItem strong {
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.reviewCard p {
+  color: #4a5568;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.reviewCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reviewCard li {
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reviewCard li::before {
+  content: '•';
+  color: #667eea;
+  font-weight: 700;
+}
+
+.terms {
+  background: #fff5f5;
+  border: 2px solid #fed7d7;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #2d3748;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #667eea;
+}
+
+.checkbox a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.checkbox a:hover {
+  text-decoration: underline;
+}
+
+.formActions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #f0f0f0;
+}
+
+.backButton,
+.nextButton,
+.submitButton {
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.backButton {
+  background: #f8fafc;
+  color: #667eea;
+  border: 2px solid #e2e8f0;
+}
+
+.backButton:hover {
+  background: white;
+  border-color: #667eea;
+}
+
+.nextButton,
+.submitButton {
+  background: #667eea;
+  color: white;
+  margin-left: auto;
+}
+
+.nextButton:hover,
+.submitButton:hover {
+  background: #5a67d8;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .progressBar {
+    margin-bottom: 2rem;
+  }
+  
+  .progressStep {
+    font-size: 0.8rem;
+  }
+  
+  .stepCircle {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .progressLine {
+    width: 40px;
+  }
+  
+  .form {
+    padding: 2rem;
+  }
+  
+  .step h2 {
+    font-size: 1.8rem;
+  }
+  
+  .formGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .uploadArea {
+    padding: 2rem;
+  }
+  
+  .uploadIcon {
+    font-size: 3rem;
+  }
+  
+  .formActions {
+    flex-direction: column;
+  }
+  
+  .nextButton,
+  .submitButton {
+    margin-left: 0;
+  }
+}
