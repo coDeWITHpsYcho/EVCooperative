@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
-import { Menu, X, User, LogOut, Car, ShoppingBag, Users } from 'lucide-react';
+import { Menu, X, User, LogOut, Car, ShoppingBag, Users, Globe, Banknote } from 'lucide-react'; // <-- Added icons
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -43,6 +43,26 @@ const Navbar = () => {
               <Users size={20} />
               Cooperative
             </Link>
+
+            {/* New Tabs */}
+            <a
+              href="https://traidiv.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.navLink}
+            >
+              <Globe size={20} />
+              Traidiv
+            </a>
+            <a
+              href="https://loan.techfest.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.navLink}
+            >
+              <Banknote size={20} />
+              Loan
+            </a>
           </div>
 
           <div className={styles.authSection}>
@@ -101,7 +121,29 @@ const Navbar = () => {
               <Users size={20} />
               Cooperative
             </Link>
-            
+
+            {/* New Tabs in Mobile */}
+            <a
+              href="https://traidiv.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.mobileNavLink}
+              onClick={toggleMenu}
+            >
+              <Globe size={20} />
+              Traidiv
+            </a>
+            <a
+              href="https://loan.techfest.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.mobileNavLink}
+              onClick={toggleMenu}
+            >
+              <Banknote size={20} />
+              Loan
+            </a>
+
             {user ? (
               <>
                 <Link to="/dashboard" className={styles.mobileNavLink} onClick={toggleMenu}>
