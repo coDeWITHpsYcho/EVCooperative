@@ -134,7 +134,7 @@ const Navbar = () => {
               Traidiv
             </a>
             <a
-              href="https://loan.techfest.org/"
+              href="https://homeloan.techfest.org/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.mobileNavLink}
